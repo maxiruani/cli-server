@@ -1,0 +1,26 @@
+{
+  "name": "cli-server",
+  "preferGlobal": "true",
+  "description": "A simple CLI static server",
+  "version": "0.0.1",
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.1.1",
+    "morgan": "1.0.0",
+    "commander": "^2.5.1",
+    "colors": "^1.0.3",
+    "basic-auth": "^1.0.0"
+  },
+  "author": "Maximiliano Ruani <maxi.ruani91@gmail.com>",
+  "keywords": [
+    "cli",
+    "server",
+    "static",
+    "static server"
+  ],
+  "bin": "./bin/cli-server.js",
+  "main": "./lib/cli-server.js",
+  "engines": {
+    "node": ">= 0.10.0"
+  }
+}
