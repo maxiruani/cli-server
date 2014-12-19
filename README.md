@@ -39,5 +39,32 @@ open      | `false`
 auth      | `None`
 index     | `index.html`
 
+## Examples
+
+Serve a specific directory at port 3500 with mount point /base.
+
+``` bash
+  $ cli-server --port 3500 --mount /base --dir D:/dev/project
+```
+Output
+```
+  Directory "./public" does not exist. Fallback to root "."
+  Serving "D:\dev\project" at: http://127.0.0.1:3500/base
+```
+
+Serve the current working directory with a basic auth and change the default index.html and opened to '0.0.0.0'.
+The --open flag is useful for mobile testing. You can browse them through the local LAN IP.
+
+``` bash
+  $ cli-server --open --auth batman:brucewayne --index hello.html
+```
+
+Output
+```
+  Directory "./public" does not exist. Fallback to root "."
+  Serving "D:\dev\project" at: http://192.168.0.11:5555/
+  Serving "D:\dev\project" at: http://127.0.0.1:5555/
+```
+
 #### License: MIT
 #### Author: [Maximiliano Ruani](http://github.com/maxiruani)
