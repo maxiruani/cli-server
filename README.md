@@ -24,7 +24,7 @@ A simple CLI static server.
     -o, --open                      Serve at "0.0.0.0". Useful for mobile 
                                     testing in a LAN. Default: "127.0.0.1".
     -a, --auth <username:password>  Basic auth http authentication. Default: None.
-                                    Example: "username:password" -> "batman:brucewayne".
+                                    Example: "username:password"->"batman:brucewayne".
     -i, --index <filename>          Set custom index.html. Default: index.html
 ```
 
